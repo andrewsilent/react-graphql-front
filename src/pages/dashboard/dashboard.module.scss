@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+}
+
+.sidebar {
+  overflow-y: scroll;
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background-color: #43445b;
+  color: #fff;
+}
+
+.stories {
+  overflow-y: scroll;
+  flex-grow: 1;
+  max-width: 470px;
+  height: 100vh;
+}
+
+.story {
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #ebebeb;
+  overflow-y: scroll;
+}

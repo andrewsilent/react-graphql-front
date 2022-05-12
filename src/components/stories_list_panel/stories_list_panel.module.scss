@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 2rem;
+  .title {
+    color: #43445b;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: capitalize;
+  }
+  .button {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    padding: 1rem 1.6rem;
+    margin: 0px;
+    min-width: 20px;
+    min-height: 36px;
+    border-radius: 4px;
+    color: #fff;
+    background: rgb(88, 139, 194);
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+  }
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 2rem;
+  .selectorList {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    .selectorItem {
+      flex-grow: 1;
+
+      .selector {
+        font-size: 1.5rem;
+        flex-grow: 1;
+        .selectorWrapper {
+          border: 1px solid #dedede;
+          z-index: 2;
+          border-radius: 8px;
+          padding-left: 8px;
+          .caption {
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.87);
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+    .selectorItem + .selectorItem {
+      margin: 0 1rem;
+      max-width: 160px;
+    }
+  }
+  .switcher {
+    .switch {
+      margin-left: 0.5rem;
+    }
+  }
+}

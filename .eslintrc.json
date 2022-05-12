@@ -1,0 +1,43 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "prettier",
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "eslint:recommended"
+  ],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-debugger": 2,
+    "prettier/prettier": 2,
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error",
+          "log"
+        ]
+      }
+    ],
+    "keyword-spacing": 2,
+    "max-len": [
+      2,
+      150
+    ],
+    "no-undef": 2,
+    "prefer-arrow-callback": 2,
+    "no-use-before-define": 0,
+    "no-unused-vars": 0,
+    "no-explicit-any": 0,
+    "explicit-function-return-type": 0,
+    "explicit-module-boundary-types": 0,
+    "interface-name-prefix": "off"
+  }
+}
